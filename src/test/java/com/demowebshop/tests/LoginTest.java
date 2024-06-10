@@ -9,6 +9,7 @@ public class LoginTest extends BaseTest{
 	@Test
 	public void verifyUserIsAbleToLoginWithValidCred() {
 		loginPage.Login();
+		
 	
 	}
 	
