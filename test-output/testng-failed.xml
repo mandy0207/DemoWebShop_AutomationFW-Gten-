@@ -6,6 +6,8 @@
       <class name="com.demowebshop.tests.LoginTest">
         <methods>
           <include name="verifyUserIsAbleToLoginWithValidCred"/>
+          <include name="initializeDriver"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.demowebshop.tests.LoginTest -->
     </classes>
