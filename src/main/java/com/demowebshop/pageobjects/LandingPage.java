@@ -5,10 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LandingPage {
+public class LandingPage extends PageActions{
      WebDriver driver;
      
 	public LandingPage(WebDriver driver) {
+		super(driver);
 		this.driver= driver;
 		PageFactory.initElements(driver, this);
 		
@@ -22,11 +23,19 @@ public class LandingPage {
 	private WebElement searchBtn;
 	
 	
+	@FindBy(css=".header-links li:nth-child(1) a")
+	private WebElement emailHeader;
 	
 	
 	public void searchProduct(String name) {
-		searchBox.sendKeys(name);
-		searchBtn.click();
+		setTextBox(searchBox, name);
+		clickElement(searchBtn);
+		
+	}
+	
+	public String validateEmailIsDisplayed() {
+		return emailHeader.getText();
+		
 	}
 
 	

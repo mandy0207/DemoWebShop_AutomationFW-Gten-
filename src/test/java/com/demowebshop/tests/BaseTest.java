@@ -14,7 +14,7 @@ import com.demowebshop.pageobjects.LoginPage;
 
 public class BaseTest {
 
-	WebDriver driver = null;
+	WebDriver driver =null;
 
 	@BeforeMethod
 	public void initializeDriver() {
@@ -33,19 +33,17 @@ public class BaseTest {
 		else {
 			System.out.println("not a valid browser");
 		}
-    
+		initPages();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
 		driver.manage().window().maximize();
-		initPages();
 		driver.get("https://demowebshop.tricentis.com/");
 
 	}
+	
 
 	public LoginPage loginPage;
 	public LandingPage landingPage;
 	
-	
-
 	public void initPages() {
 		loginPage = new LoginPage(driver);
 		landingPage = new LandingPage(driver);

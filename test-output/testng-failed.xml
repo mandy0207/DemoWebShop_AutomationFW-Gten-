@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demowebshop.tests.LoginTest">
+      <class name="com.demowebshop.tests.HeaderTest">
         <methods>
-          <include name="verifyUserIsAbleToLoginWithValidCred"/>
+          <include name="verifyUserIsAbleToAddProductToCart"/>
           <include name="initializeDriver"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.demowebshop.tests.LoginTest -->
+      </class> <!-- com.demowebshop.tests.HeaderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
