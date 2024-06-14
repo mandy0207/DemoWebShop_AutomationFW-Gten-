@@ -1,4 +1,4 @@
-package com.demowebshop.pageobjects;
+package com.demowebshop.Utils;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -34,6 +34,11 @@ public class PageActions {
 		waitUntilClickable(element);
 		element.sendKeys(value);
 	}
+	
+	public String getElementText(WebElement element) {
+		waitUntilDisplayed(element);
+		return element.getText();
+	}
 
 	public void waitUntilDisplayed(WebElement element) {
 
@@ -61,6 +66,14 @@ public class PageActions {
 		driver.switchTo().window(childWindow);
 	}
 
+	public void shortWait() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public void switchToParentWindow() {
 
 	}

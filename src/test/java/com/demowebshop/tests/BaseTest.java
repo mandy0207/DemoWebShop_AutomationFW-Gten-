@@ -1,6 +1,8 @@
 package com.demowebshop.tests;
 
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,17 +10,27 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
+import com.demowebshop.Utils.TestProperties;
 import com.demowebshop.pageobjects.LandingPage;
 import com.demowebshop.pageobjects.LoginPage;
 
 public class BaseTest {
 
 	WebDriver driver =null;
+	Properties prop ;
 
 	@BeforeMethod
-	public void initializeDriver() {
-		String browserName = "chrome";
+	
+	public void initializeDriver() throws IOException {
+		
+	   String browserName = prop.getProperty("browserName");
+	   String env= prop.getProperty("Envrionment");
+	   String URL=prop.getProperty(env);
+	   System.out.println("Executing in : "+env);
+	    
+		
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
 
@@ -36,10 +48,18 @@ public class BaseTest {
 		initPages();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
 		driver.manage().window().maximize();
-		driver.get("https://demowebshop.tricentis.com/");
+		driver.get(URL);
 
 	}
 	
+	@BeforeSuite
+	public void presetUp() throws IOException {
+		 prop = TestProperties.getProperties();
+	}
+	
+	/**
+	 * Initializing pages
+	 */
 
 	public LoginPage loginPage;
 	public LandingPage landingPage;

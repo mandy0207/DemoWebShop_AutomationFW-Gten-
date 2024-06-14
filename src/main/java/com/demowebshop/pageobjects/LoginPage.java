@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends PageActions {
+public class LoginPage extends BasePage {
 	WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
@@ -27,10 +27,17 @@ public class LoginPage extends PageActions {
 
 	@FindBy(xpath = "//*[@class='buttons']//input[@value='Log in']")
 	private WebElement loginBtn;
-
-	@FindBy(xpath = "//*[@class='top-menu']/li/a")
-	private List<WebElement> headerItems;
-
+	
+	@FindBy(id = "newsletter-email")
+	private WebElement emailInput;
+	
+	@FindBy(id = "newsletter-subscribe-button")
+	private WebElement susbcribeBtn;
+	
+	@FindBy(css = "[id='newsletter-result-block']")
+	private WebElement newsLetterText;
+	
+	
 	public String Login() {
 		clickElement(headerLogin);
 		setTextBox(email, "obsqura24@gmail.com");
@@ -42,6 +49,14 @@ public class LoginPage extends PageActions {
 
 	public List<String> getHeaders() {
 		return getListofTextFromWebElements(headerItems);
+	}
+	
+	public String validateNewsLetterSubscription(String email) {
+		setTextBox(emailInput, email);
+		clickElement(susbcribeBtn);
+		shortWait();
+		return getElementText(newsLetterText);
+		
 	}
 
 }

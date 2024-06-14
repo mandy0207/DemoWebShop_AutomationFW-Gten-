@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LandingPage extends PageActions{
+public class LandingPage extends BasePage{
      WebDriver driver;
      
 	public LandingPage(WebDriver driver) {
@@ -14,7 +14,6 @@ public class LandingPage extends PageActions{
 		PageFactory.initElements(driver, this);
 		
 	}
-	
 
 	@FindBy(id="small-searchterms")
 	private WebElement searchBox;

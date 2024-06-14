@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-12T18:42:17 IST" name="Default suite" finished-at="2024-06-12T18:42:22 IST" duration-ms="4915">
+  <suite started-at="2024-06-14T18:41:17 IST" name="Default suite" finished-at="2024-06-14T18:41:23 IST" duration-ms="6054">
     <groups>
     </groups>
-    <test started-at="2024-06-12T18:42:17 IST" name="Default test" finished-at="2024-06-12T18:42:22 IST" duration-ms="4915">
+    <test started-at="2024-06-14T18:41:17 IST" name="Default test" finished-at="2024-06-14T18:41:23 IST" duration-ms="6054">
       <class name="com.demowebshop.tests.HeaderTest">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:com.demowebshop.tests.HeaderTest@6c64cb25]" started-at="2024-06-12T18:42:17 IST" name="initializeDriver" finished-at="2024-06-12T18:42:22 IST" duration-ms="4581" status="PASS">
+        <test-method is-config="true" signature="presetUp()[pri:0, instance:com.demowebshop.tests.HeaderTest@747ddf94]" started-at="2024-06-14T18:41:17 IST" name="presetUp" finished-at="2024-06-14T18:41:17 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presetUp -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:com.demowebshop.tests.HeaderTest@747ddf94]" started-at="2024-06-14T18:41:17 IST" name="initializeDriver" finished-at="2024-06-14T18:41:23 IST" duration-ms="5758" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="verifyUserIsAbleToAddProductToCart()[pri:0, instance:com.demowebshop.tests.HeaderTest@6c64cb25]" started-at="2024-06-12T18:42:22 IST" name="verifyUserIsAbleToAddProductToCart" finished-at="2024-06-12T18:42:22 IST" duration-ms="98" status="PASS">
+        <test-method signature="verifyUserIsAbleToAddProductToCart()[pri:0, instance:com.demowebshop.tests.HeaderTest@747ddf94]" started-at="2024-06-14T18:41:23 IST" name="verifyUserIsAbleToAddProductToCart" finished-at="2024-06-14T18:41:23 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToAddProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.HeaderTest@6c64cb25]" started-at="2024-06-12T18:42:22 IST" name="tearDown" finished-at="2024-06-12T18:42:22 IST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.HeaderTest@747ddf94]" started-at="2024-06-14T18:41:23 IST" name="tearDown" finished-at="2024-06-14T18:41:23 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
