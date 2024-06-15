@@ -20,7 +20,6 @@ public class SubscriptionTest extends BaseTest{
 		System.out.println(actualnewsLetterText);
 		Assert.assertEquals(actualnewsLetterText, prop.getProperty("subscriptionMsg"));
 		
-		
-		
+	
 	}
 }

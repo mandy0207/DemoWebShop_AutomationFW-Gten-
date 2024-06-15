@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class PageActions {
 
@@ -85,4 +86,15 @@ public class PageActions {
 		}
 		return actualList;
 	}
+	
+	public boolean isElementDisplayed(WebElement element) {
+		try {
+			return element.isDisplayed();
+		}
+		catch(Exception e) {
+			Assert.fail("Element is not displayed");
+		}
+		return false;
+	}
 }
+

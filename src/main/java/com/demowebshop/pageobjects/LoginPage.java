@@ -38,13 +38,14 @@ public class LoginPage extends BasePage {
 	private WebElement newsLetterText;
 	
 	
-	public String Login() {
+	
+	public String Login(String emailID, String Password) {
 		clickElement(headerLogin);
-		setTextBox(email, "obsqura24@gmail.com");
-		setTextBox(password, "mypassword");
+		setTextBox(email, emailID);
+		setTextBox(password, Password);
 		clickElement(loginBtn);
 
-		return "obsqura24@gmail.com";
+		return emailID;
 	}
 
 	public List<String> getHeaders() {
@@ -57,6 +58,11 @@ public class LoginPage extends BasePage {
 		shortWait();
 		return getElementText(newsLetterText);
 		
+	}
+	
+	public void navigateToRegisteration() {
+		
+		clickElement(register);
 	}
 
 }

@@ -22,6 +22,9 @@ public class BasePage extends PageActions {
 	@FindBy(xpath = "//*[@class='top-menu']/li/a")
 	protected List<WebElement> headerItems;
 	
+	@FindBy(xpath = "//a[@class='ico-register']")
+	protected WebElement register;
+	
 	
 	
 	

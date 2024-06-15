@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeSuite;
 import com.demowebshop.Utils.TestProperties;
 import com.demowebshop.pageobjects.LandingPage;
 import com.demowebshop.pageobjects.LoginPage;
+import com.demowebshop.pageobjects.RegisterationPage;
 
 public class BaseTest {
 
@@ -63,10 +64,12 @@ public class BaseTest {
 
 	public LoginPage loginPage;
 	public LandingPage landingPage;
+	public  RegisterationPage registerPage;
 	
 	public void initPages() {
 		loginPage = new LoginPage(driver);
 		landingPage = new LandingPage(driver);
+		registerPage = new  RegisterationPage(driver);
 	}
 
 	@AfterMethod

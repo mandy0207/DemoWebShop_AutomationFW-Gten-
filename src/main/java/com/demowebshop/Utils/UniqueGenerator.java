@@ -13,7 +13,7 @@ public class UniqueGenerator {
 	
 	public static String getCurrentDateTime() {
 		
-		 String dateTime = new SimpleDateFormat("dd/MM/yyyy").format(Calendar.getInstance().getTime());
-		 return dateTime.replaceAll("/", "");
+		 String dateTime = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss").format(Calendar.getInstance().getTime());
+		 return dateTime.replaceAll("-", "").replaceAll(":", "").replaceAll(" ", "");
 	}
 }
