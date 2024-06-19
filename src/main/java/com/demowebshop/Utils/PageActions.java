@@ -92,9 +92,9 @@ public class PageActions {
 			return element.isDisplayed();
 		}
 		catch(Exception e) {
-			Assert.fail("Element is not displayed");
+			return false;
 		}
-		return false;
+		
 	}
 }
 

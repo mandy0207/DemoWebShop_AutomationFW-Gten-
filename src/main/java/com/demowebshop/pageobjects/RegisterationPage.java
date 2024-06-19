@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.demowebshop.Utils.UniqueGenerator;
+import com.demowebshop.enums.Locators;
 import com.demowebshop.models.Person;
 
 public class RegisterationPage extends BasePage{
@@ -70,22 +71,46 @@ public class RegisterationPage extends BasePage{
 
 	}
 	
-	public void registerMultipleUsers(Person person) {
-		
+	public String registerUser(Person person) {
+		String email =person.email+UniqueGenerator.getCurrentDateTime()+"@yopmail.com";
 		setTextBox(firstNameInput, person.firstName);
 		setTextBox(lastNameInput, person.lastName);
-		setTextBox(emailInput, person.email+UniqueGenerator.getCurrentDateTime()+"@yopmail.com");
+		setTextBox(emailInput, email);
 		setTextBox(passwordInput, person.password);
 		setTextBox(confirmPasswordInput, person.confirmPassword);
-		clickElement(registerBtn);
+		clickElement(registerBtn);	
+		return email;
+	}
+	
+	public Object validateRegisteraionPageItems(Locators name) {
+		
+		switch(name){
+		case REGISTERATIONALERTMSG:
+			return getElementText(alertMsg);
+		case LOGGEDEMAIL:
+			return getElementText(loggedEmail);
+		case LOGOUT:
+			return isElementDisplayed(logout);
+		default : 
+			return "";
+		}
+		
+	}
+	
+	public RegisterationPage logout() {
 		clickElement(logout);
+		return this;
+		
+	}
+	
+	public void navigateToRegisterationSection() {
 		clickElement(register);
 		
 	}
 	
 	
+
 	
 	
-	
-	
+
 }

@@ -18,7 +18,6 @@ public class ExcelReader {
 	public static List<Person> readData() throws IOException {
 		
 		List<Person> personList = new ArrayList<Person>();
-		System.out.println(personList);
 		FileInputStream fis = new FileInputStream(Constants.excelFile);
 		Workbook workbook = new XSSFWorkbook(fis);
 		Sheet sheet = workbook.getSheetAt(0);    // will give me sheet number
@@ -31,7 +30,6 @@ public class ExcelReader {
 			String email=row.getCell(2).getStringCellValue();
 			String password= row.getCell(3).getStringCellValue();
 			String confirmPassword= row.getCell(4).getStringCellValue();
-			System.out.println(firstName + " "+ lastName+" "+email+" "+password+" "+confirmPassword);
 			
 			Person person = new Person(firstName, lastName, email, password, confirmPassword);
 			personList.add(person);

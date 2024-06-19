@@ -14,6 +14,8 @@ public class UniqueGenerator {
 	public static String getCurrentDateTime() {
 		
 		 String dateTime = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss").format(Calendar.getInstance().getTime());
-		 return dateTime.replaceAll("-", "").replaceAll(":", "").replaceAll(" ", "");
+		 return dateTime.replaceAll("[^0-9]","");
 	}
+	
+
 }

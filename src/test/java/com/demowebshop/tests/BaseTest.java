@@ -11,6 +11,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import com.demowebshop.Utils.TestProperties;
 import com.demowebshop.pageobjects.LandingPage;
@@ -23,10 +25,14 @@ public class BaseTest {
 	Properties prop ;
 
 	@BeforeMethod
-	
-	public void initializeDriver() throws IOException {
+	@Parameters({"browserName"})
+	public void initializeDriver(@Optional String browserName) throws IOException {
+		prop = TestProperties.getProperties();
 		
-	   String browserName = prop.getProperty("browserName");
+		if(browserName==null || browserName.isEmpty()) {
+		 browserName = prop.getProperty("browserName");
+		}
+	  
 	   String env= prop.getProperty("Envrionment");
 	   String URL=prop.getProperty(env);
 	   System.out.println("Executing in : "+env);
@@ -35,7 +41,7 @@ public class BaseTest {
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
 
-		} else if (browserName.equalsIgnoreCase("msedge")) {
+		} else if (browserName.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
 		}
 
@@ -53,10 +59,8 @@ public class BaseTest {
 
 	}
 	
-	@BeforeSuite
-	public void presetUp() throws IOException {
-		 prop = TestProperties.getProperties();
-	}
+	
+
 	
 	/**
 	 * Initializing pages

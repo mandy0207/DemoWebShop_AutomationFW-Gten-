@@ -2,7 +2,7 @@ package com.demowebshop.models;
 
 public class Person {
 
-	public String firstName, lastName, email, password, confirmPassword;
+	public String firstName, lastName, email, password, confirmPassword, errorMsg;
 
 	public Person(String firstName, String lastName, String email, String password, String confirmPassword) {
 		this.firstName = firstName;
@@ -11,6 +11,8 @@ public class Person {
 		this.password = password;
 		this.confirmPassword = confirmPassword;
 	}
+	
+
 
 	@Override
 	public String toString() {

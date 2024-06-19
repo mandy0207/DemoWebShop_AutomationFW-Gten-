@@ -5,6 +5,7 @@ import java.util.LinkedHashMap;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.demowebshop.Utils.CommonAssertions;
 import com.github.javafaker.Faker;
 
 public class RegisterationTest extends BaseTest {
@@ -18,9 +19,13 @@ public class RegisterationTest extends BaseTest {
 		LinkedHashMap<String, Object> map = registerPage.validateRegisteration(faker.name().firstName(),faker.name().lastName(),email, password,  password);
 
 		System.out.println(map);
-		Assert.assertEquals(map.get("alertMsg"), "Your registration completed");
-		Assert.assertEquals(map.get("loggedEmail"), email);
-		Assert.assertEquals(map.get("isLogoutDisplayed"), true);
+		CommonAssertions.verifyEqual(map.get("alertMsg").toString(), "Your registration completed","");
+	
+		CommonAssertions.verifyEqual(map.get("alertMsg").toString(), "Your registration completed","");
+		CommonAssertions.verifyEqual(map.get("loggedEmail").toString(), email,"");
+		CommonAssertions.validateTrue((boolean) map.get("isLogoutDisplayed"), "Logout button not displayed");
+	
+		
 	
 	}
 	
