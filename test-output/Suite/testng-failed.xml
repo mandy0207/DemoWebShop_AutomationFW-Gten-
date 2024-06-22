@@ -1,63 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="LoginTest(failed)">
-    <parameter name="browserName" value="chrome"/>
-    <classes>
-      <class name="com.demowebshop.tests.LoginTest">
-        <methods>
-          <include name="presetUp"/>
-          <include name="verifyUserIsAbleToLoginWithValidCred"/>
-          <include name="initializeDriver"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.demowebshop.tests.LoginTest -->
-    </classes>
-  </test> <!-- LoginTest(failed) -->
-  <test thread-count="5" name="DataDrivenTest(failed)">
-    <parameter name="browserName" value="chrome"/>
-    <classes>
-      <class name="com.demowebshop.tests.DataDrivenRegisteration">
-        <methods>
-          <include name="presetUp"/>
-          <include name="verifyUserisAbleToRegisterMultiplePersons"/>
-          <include name="initializeDriver"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.demowebshop.tests.DataDrivenRegisteration -->
-    </classes>
-  </test> <!-- DataDrivenTest(failed) -->
-  <test thread-count="5" name="RegisterationTest(failed)">
-    <parameter name="browserName" value="edge"/>
-    <classes>
-      <class name="com.demowebshop.tests.RegisterationTest">
-        <methods>
-          <include name="presetUp"/>
-          <include name="verifyUserIsAbletoSignupWithValidCreds"/>
-          <include name="initializeDriver"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.demowebshop.tests.RegisterationTest -->
-    </classes>
-  </test> <!-- RegisterationTest(failed) -->
-  <test thread-count="5" name="SubscriptionTest(failed)">
-    <classes>
-      <class name="com.demowebshop.tests.SubscriptionTest">
-        <methods>
-          <include name="presetUp"/>
-          <include name="verifyUserIsAbleToSubscribe"/>
-          <include name="initializeDriver"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.demowebshop.tests.SubscriptionTest -->
-    </classes>
-  </test> <!-- SubscriptionTest(failed) -->
-  <test thread-count="5" name="HeaderTest(failed)">
-    <parameter name="browserName" value="firefox"/>
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.demowebshop.Listeners.ReportingListener"/>
+    <listener class-name="com.demowebshop.Listeners.GtenTransFormer"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="HeaderTest(failed)">
     <classes>
       <class name="com.demowebshop.tests.HeaderTest">
         <methods>
-          <include name="presetUp"/>
           <include name="verifyUserIsAbleToAddProductToCart"/>
           <include name="initializeDriver"/>
           <include name="tearDown"/>
@@ -65,4 +16,15 @@
       </class> <!-- com.demowebshop.tests.HeaderTest -->
     </classes>
   </test> <!-- HeaderTest(failed) -->
+  <test thread-count="5" parallel="tests" name="LoginTest(failed)">
+    <classes>
+      <class name="com.demowebshop.tests.LoginTest">
+        <methods>
+          <include name="verifyUserIsAbleToLoginWithValidCred"/>
+          <include name="initializeDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.demowebshop.tests.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

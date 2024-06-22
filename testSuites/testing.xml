@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	
+<suite name="Suite" parallel="tests" thread-count="5">
+	<listeners>
+		<listener class-name="com.demowebshop.Listeners.ReportingListener"></listener>
+		<listener class-name="com.demowebshop.Listeners.GtenTransFormer"></listener>
+	</listeners>
   <test name="LoginTest">
     <classes>
       <class name="com.demowebshop.tests.LoginTest"/>
@@ -32,4 +35,5 @@
     </classes>
   </test> 
   
+ 
 </suite> 

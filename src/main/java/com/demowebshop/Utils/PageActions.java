@@ -1,16 +1,23 @@
 package com.demowebshop.Utils;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import com.demowebshop.Context.DriverManager;
 
 public class PageActions {
 
@@ -96,5 +103,22 @@ public class PageActions {
 		}
 		
 	}
+	
+//	public static  String getScreenshot() throws IOException {
+//		TakesScreenshot screeshot = (TakesScreenshot) DriverManager.getDriver();
+//		File src = screeshot.getScreenshotAs(OutputType.FILE);
+//		String path= System.getProperty("user.dir") + "//Reports//screenshot"+UniqueGenerator.getCurrentDateTime()+".png";
+//		File dest = new File(path);
+//		FileUtils.moveFile(src, dest);
+//		return path;
+//	}
+	
+	public static  String getScreenshot() throws IOException {
+		TakesScreenshot screeshot = (TakesScreenshot) DriverManager.getDriver();
+		 return screeshot.getScreenshotAs(OutputType.BASE64);
+	
+	}
+	
+
 }
 

@@ -1,82 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results retried="2" ignored="2" total="9" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-19T18:37:30 IST" name="Suite" finished-at="2024-06-19T18:39:33 IST" duration-ms="123722">
+  <suite started-at="2024-06-22T12:47:04 IST" name="Suite" finished-at="2024-06-22T12:47:22 IST" duration-ms="18433">
     <groups>
     </groups>
-    <test started-at="2024-06-19T18:37:30 IST" name="LoginTest" finished-at="2024-06-19T18:37:48 IST" duration-ms="18756">
-      <class name="com.demowebshop.tests.LoginTest">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.LoginTest@5c33f1a9]" started-at="2024-06-19T18:37:30 IST" name="initializeDriver" finished-at="2024-06-19T18:37:43 IST" duration-ms="13126" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="verifyUserIsAbleToLoginWithValidCred()[pri:0, instance:com.demowebshop.tests.LoginTest@5c33f1a9]" started-at="2024-06-19T18:37:43 IST" name="verifyUserIsAbleToLoginWithValidCred" finished-at="2024-06-19T18:37:48 IST" duration-ms="4487" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToLoginWithValidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.LoginTest@5c33f1a9]" started-at="2024-06-19T18:37:48 IST" name="tearDown" finished-at="2024-06-19T18:37:48 IST" duration-ms="873" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.tests.LoginTest -->
-    </test> <!-- LoginTest -->
-    <test started-at="2024-06-19T18:37:49 IST" name="DataDrivenTest" finished-at="2024-06-19T18:38:28 IST" duration-ms="39816">
-      <class name="com.demowebshop.tests.DataDrivenRegisteration">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.DataDrivenRegisteration@7c7a06ec]" started-at="2024-06-19T18:37:49 IST" name="initializeDriver" finished-at="2024-06-19T18:37:58 IST" duration-ms="9171" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="verifyUserisAbleToRegisterMultiplePersons()[pri:0, instance:com.demowebshop.tests.DataDrivenRegisteration@7c7a06ec]" started-at="2024-06-19T18:37:58 IST" name="verifyUserisAbleToRegisterMultiplePersons" finished-at="2024-06-19T18:38:28 IST" duration-ms="29740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserisAbleToRegisterMultiplePersons -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.DataDrivenRegisteration@7c7a06ec]" started-at="2024-06-19T18:38:28 IST" name="tearDown" finished-at="2024-06-19T18:38:28 IST" duration-ms="875" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.tests.DataDrivenRegisteration -->
-    </test> <!-- DataDrivenTest -->
-    <test started-at="2024-06-19T18:38:28 IST" name="RegisterationTest" finished-at="2024-06-19T18:39:00 IST" duration-ms="31544">
+    <test started-at="2024-06-22T12:47:04 IST" name="RegisterationTest" finished-at="2024-06-22T12:47:14 IST" duration-ms="9992">
       <class name="com.demowebshop.tests.RegisterationTest">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.RegisterationTest@6c6cb480]" started-at="2024-06-19T18:38:28 IST" name="initializeDriver" finished-at="2024-06-19T18:38:49 IST" duration-ms="20433" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="verifyUserIsAbletoSignupWithValidCreds()[pri:0, instance:com.demowebshop.tests.RegisterationTest@6c6cb480]" started-at="2024-06-19T18:38:49 IST" name="verifyUserIsAbletoSignupWithValidCreds" finished-at="2024-06-19T18:38:57 IST" duration-ms="8315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbletoSignupWithValidCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.RegisterationTest@6c6cb480]" started-at="2024-06-19T18:38:57 IST" name="tearDown" finished-at="2024-06-19T18:39:00 IST" duration-ms="2780" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.tests.RegisterationTest -->
-    </test> <!-- RegisterationTest -->
-    <test started-at="2024-06-19T18:39:00 IST" name="SubscriptionTest" finished-at="2024-06-19T18:39:14 IST" duration-ms="13955">
-      <class name="com.demowebshop.tests.SubscriptionTest">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.SubscriptionTest@36ebc363]" started-at="2024-06-19T18:39:00 IST" name="initializeDriver" finished-at="2024-06-19T18:39:09 IST" duration-ms="9067" status="PASS">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.RegisterationTest@727eb8cb]" started-at="2024-06-22T12:47:04 IST" name="initializeDriver" finished-at="2024-06-22T12:47:10 IST" duration-ms="6484" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -85,38 +16,269 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="verifyUserIsAbleToSubscribe()[pri:0, instance:com.demowebshop.tests.SubscriptionTest@36ebc363]" started-at="2024-06-19T18:39:09 IST" name="verifyUserIsAbleToSubscribe" finished-at="2024-06-19T18:39:13 IST" duration-ms="3709" status="PASS">
+        <test-method signature="verifyUserIsAbletoSignupWithValidCreds()[pri:0, instance:com.demowebshop.tests.RegisterationTest@727eb8cb]" started-at="2024-06-22T12:47:10 IST" name="verifyUserIsAbletoSignupWithValidCreds" finished-at="2024-06-22T12:47:14 IST" duration-ms="3305" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToSubscribe -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.SubscriptionTest@36ebc363]" started-at="2024-06-19T18:39:13 IST" name="tearDown" finished-at="2024-06-19T18:39:14 IST" duration-ms="1168" status="PASS">
+        </test-method> <!-- verifyUserIsAbletoSignupWithValidCreds -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.RegisterationTest@727eb8cb]" started-at="2024-06-22T12:47:14 IST" name="tearDown" finished-at="2024-06-22T12:47:14 IST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.tests.SubscriptionTest -->
-    </test> <!-- SubscriptionTest -->
-    <test started-at="2024-06-19T18:39:14 IST" name="HeaderTest" finished-at="2024-06-19T18:39:33 IST" duration-ms="19389">
-      <class name="com.demowebshop.tests.HeaderTest">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.HeaderTest@43bc63a3]" started-at="2024-06-19T18:39:14 IST" name="initializeDriver" finished-at="2024-06-19T18:39:28 IST" duration-ms="14262" status="PASS">
+      </class> <!-- com.demowebshop.tests.RegisterationTest -->
+    </test> <!-- RegisterationTest -->
+    <test started-at="2024-06-22T12:47:04 IST" name="SubscriptionTest" finished-at="2024-06-22T12:47:15 IST" duration-ms="10609">
+      <class name="com.demowebshop.tests.SubscriptionTest">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.SubscriptionTest@1bae316d]" started-at="2024-06-22T12:47:04 IST" name="initializeDriver" finished-at="2024-06-22T12:47:11 IST" duration-ms="6994" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
+              <value is-null="true"/>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="verifyUserIsAbleToAddProductToCart()[pri:0, instance:com.demowebshop.tests.HeaderTest@43bc63a3]" started-at="2024-06-19T18:39:28 IST" name="verifyUserIsAbleToAddProductToCart" finished-at="2024-06-19T18:39:29 IST" duration-ms="684" status="PASS">
+        <test-method signature="verifyUserIsAbleToSubscribe()[pri:0, instance:com.demowebshop.tests.SubscriptionTest@1bae316d]" started-at="2024-06-22T12:47:11 IST" name="verifyUserIsAbleToSubscribe" finished-at="2024-06-22T12:47:14 IST" duration-ms="2914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToSubscribe -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.SubscriptionTest@1bae316d]" started-at="2024-06-22T12:47:14 IST" name="tearDown" finished-at="2024-06-22T12:47:15 IST" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.tests.SubscriptionTest -->
+    </test> <!-- SubscriptionTest -->
+    <test started-at="2024-06-22T12:47:04 IST" name="HeaderTest" finished-at="2024-06-22T12:47:15 IST" duration-ms="11502">
+      <class name="com.demowebshop.tests.HeaderTest">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.HeaderTest@1b45c0e]" started-at="2024-06-22T12:47:04 IST" name="initializeDriver" finished-at="2024-06-22T12:47:10 IST" duration-ms="5886" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method retried="true" signature="verifyUserIsAbleToAddProductToCart()[pri:0, instance:com.demowebshop.tests.HeaderTest@1b45c0e]" started-at="2024-06-22T12:47:10 IST" name="verifyUserIsAbleToAddProductToCart" finished-at="2024-06-22T12:47:10 IST" duration-ms="101" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.demowebshop.tests.HeaderTest.verifyUserIsAbleToAddProductToCart(HeaderTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToAddProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.HeaderTest@43bc63a3]" started-at="2024-06-19T18:39:29 IST" name="tearDown" finished-at="2024-06-19T18:39:33 IST" duration-ms="4427" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.HeaderTest@1b45c0e]" started-at="2024-06-22T12:47:10 IST" name="tearDown" finished-at="2024-06-22T12:47:10 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.HeaderTest@1b45c0e]" started-at="2024-06-22T12:47:10 IST" name="initializeDriver" finished-at="2024-06-22T12:47:15 IST" duration-ms="4871" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="verifyUserIsAbleToAddProductToCart()[pri:0, instance:com.demowebshop.tests.HeaderTest@1b45c0e]" started-at="2024-06-22T12:47:15 IST" name="verifyUserIsAbleToAddProductToCart" finished-at="2024-06-22T12:47:15 IST" duration-ms="74" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.demowebshop.tests.HeaderTest.verifyUserIsAbleToAddProductToCart(HeaderTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToAddProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.HeaderTest@1b45c0e]" started-at="2024-06-22T12:47:15 IST" name="tearDown" finished-at="2024-06-22T12:47:15 IST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demowebshop.tests.HeaderTest -->
     </test> <!-- HeaderTest -->
+    <test started-at="2024-06-22T12:47:04 IST" name="LoginTest" finished-at="2024-06-22T12:47:20 IST" duration-ms="16430">
+      <class name="com.demowebshop.tests.LoginTest">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.LoginTest@6986852]" started-at="2024-06-22T12:47:04 IST" name="initializeDriver" finished-at="2024-06-22T12:47:10 IST" duration-ms="6202" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method retried="true" signature="verifyUserIsAbleToLoginWithValidCred()[pri:0, instance:com.demowebshop.tests.LoginTest@6986852]" started-at="2024-06-22T12:47:10 IST" name="verifyUserIsAbleToLoginWithValidCred" finished-at="2024-06-22T12:47:13 IST" duration-ms="2981" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.demowebshop.tests.LoginTest.verifyUserIsAbleToLoginWithValidCred(LoginTest.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToLoginWithValidCred -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.LoginTest@6986852]" started-at="2024-06-22T12:47:13 IST" name="tearDown" finished-at="2024-06-22T12:47:13 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.LoginTest@6986852]" started-at="2024-06-22T12:47:13 IST" name="initializeDriver" finished-at="2024-06-22T12:47:18 IST" duration-ms="4413" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="verifyUserIsAbleToLoginWithValidCred()[pri:0, instance:com.demowebshop.tests.LoginTest@6986852]" started-at="2024-06-22T12:47:18 IST" name="verifyUserIsAbleToLoginWithValidCred" finished-at="2024-06-22T12:47:20 IST" duration-ms="2031" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.demowebshop.tests.LoginTest.verifyUserIsAbleToLoginWithValidCred(LoginTest.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToLoginWithValidCred -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.LoginTest@6986852]" started-at="2024-06-22T12:47:20 IST" name="tearDown" finished-at="2024-06-22T12:47:20 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.tests.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test started-at="2024-06-22T12:47:04 IST" name="DataDrivenTest" finished-at="2024-06-22T12:47:22 IST" duration-ms="18433">
+      <class name="com.demowebshop.tests.DataDrivenRegisteration">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.demowebshop.tests.DataDrivenRegisteration@4eaf3684]" started-at="2024-06-22T12:47:04 IST" name="initializeDriver" finished-at="2024-06-22T12:47:10 IST" duration-ms="6477" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="verifyUserisAbleToRegisterMultiplePersons()[pri:0, instance:com.demowebshop.tests.DataDrivenRegisteration@4eaf3684]" started-at="2024-06-22T12:47:10 IST" name="verifyUserisAbleToRegisterMultiplePersons" finished-at="2024-06-22T12:47:22 IST" duration-ms="11776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserisAbleToRegisterMultiplePersons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.tests.DataDrivenRegisteration@4eaf3684]" started-at="2024-06-22T12:47:22 IST" name="tearDown" finished-at="2024-06-22T12:47:22 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demowebshop.tests.DataDrivenRegisteration -->
+    </test> <!-- DataDrivenTest -->
   </suite> <!-- Suite -->
 </testng-results>

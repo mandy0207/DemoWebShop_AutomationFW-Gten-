@@ -1,11 +1,7 @@
 package com.demowebshop.tests;
-
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.demowebshop.Utils.CommonAssertions;
-import com.demowebshop.Utils.TestProperties;
 
 public class LoginTest extends BaseTest{
 
@@ -18,7 +14,7 @@ public class LoginTest extends BaseTest{
 	
 		String expectedEmail=landingPage.validateEmailIsDisplayed();
 		CommonAssertions.verifyEqual(actualemail, expectedEmail, "Email is diplayed");
-	
+	    Assert.fail();
 	}
 	
 	
